@@ -1,6 +1,6 @@
 #!/bin/bash
 
-git clone https://github.com/teners/compiler-workout.git &&
+git clone http://github.com/$TRAVIS_REPO_SLUG.git &&
 cd compiler-workout &&
 git checkout $TRAVIS_COMMIT &&
 eval `opam config env` &&
