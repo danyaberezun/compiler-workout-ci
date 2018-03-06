@@ -1,8 +1,6 @@
 #!/bin/bash
 
-git clone http://github.com/$TRAVIS_REPO_SLUG.git &&
-cd compiler-workout &&
-git checkout $TRAVIS_COMMIT &&
+cd /usr/share/compiler-workout &&
 eval `opam config env` &&
 make &&
 make regression
