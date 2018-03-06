@@ -1,8 +1,6 @@
 #!/bin/bash
 
-git clone https://github.com/teners/compiler-workout.git &&
-cd compiler-workout &&
-git checkout $TRAVIS_COMMIT &&
+cd /usr/share/compiler-workout &&
 eval `opam config env` &&
 make &&
 make regression
