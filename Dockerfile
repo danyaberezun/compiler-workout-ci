@@ -2,6 +2,7 @@ FROM ubuntu:latest
 COPY test.sh /test.sh
 RUN apt-get -qq update \
     && apt install -y \
+	libc6-dev-i386 \
         gcc \
         make \
         m4 \
