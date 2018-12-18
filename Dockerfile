@@ -11,5 +11,5 @@ RUN apt-get -qq update \
         camlp4-extra opam \
     && opam init \
     && eval `opam config env` \
-    && opam pin add GT https://github.com/dboulytchev/GT.git \
+    && opam pin add GT https://github.com/kakadu/GT.git#ppx \
     && opam pin add ostap https://github.com/dboulytchev/ostap.git
