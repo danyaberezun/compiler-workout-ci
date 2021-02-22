@@ -1,6 +1,7 @@
 #!/bin/bash
 
 cd /usr/share/compiler-workout &&
-eval `opam config env` &&
+export OPAMSWITCH=lama &&
+eval $(opam env) &&
 make &&
 make regression
